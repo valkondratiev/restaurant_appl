@@ -38,7 +38,7 @@ public class UserController {
     public @ResponseBody
     String checkUsers(@ModelAttribute("userFromServer") User user) {
         if ("admin".equals(user.getName()) && "admin".equals(user.getPassword())) {
-            return "valid";
+            return "valid1";
         }
         return "invalid";
     }
